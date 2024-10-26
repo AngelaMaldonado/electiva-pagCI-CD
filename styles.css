@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+header {
+    background: #bb2288;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+#Taller-Parcial div ul li {
+    margin: 0;
+    
+}
+#Taller-Parcial div ul li p {
+    margin: 0;
+    padding: 0%;
+}
+#accordion {
+    background-color: #e2a8da; /* Fondo azul */
+    color: rgb(7, 6, 6); /* Texto en blanco */
+}
+
+
+#Punto{
+    margin-top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li section {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+b{
+    color: #bb2288;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #bb2288;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Acordeón */
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: none;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B'; /* Plus symbol */
+    font-size: 13px;
+    float: right;
+}
+
+.accordion.active:after {
+    content: "\2212"; /* Minus symbol */
+}
+
+.panel {
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel.show {
+    display: block;
+}
+

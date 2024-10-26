@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD - Integración Continua y Despliegue Continuo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Electiva I</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Taller-Parcial
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#Taller-Parcial">Punto 1</a>
+                    <a class="dropdown-item" href="#Taller-Parcial">Punto 2</a>
+                  
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section id="Taller-Parcial">
+            <h2>Taller-Parcial</h2>
+            <h4>Punto 1</h4>
+            ¿Cuáles son las prácticas recomendadas por AWS para la adopción de la nube híbrida?
+        
+            <button class="accordion"><b>1. Migración de Aplicaciones</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p>Utilización de Infraestructura Existente:</p>
+                        Las organizaciones pueden aprovechar las inversiones realizadas en sus instalaciones al migrar aplicaciones a la nube, obteniendo la agilidad y escalabilidad de AWS. Durante este proceso, las herramientas como AWS Migration Hub y AWS Application Migration Service facilitan la migración sin interrumpir el funcionamiento.
+                    </li>
+                    <li>
+                        <p>Migración de VMware:</p>
+                        Las empresas que utilizan VMware pueden migrar sus cargas de trabajo de manera fluida a AWS mediante la integración nativa de VMware Cloud on AWS, permitiendo una transición gradual sin reconfiguraciones significativas.
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion"><b>2. Expansión del Centro de Datos</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p>Computación Híbrida y Escalabilidad:</p>
+                        AWS permite ampliar el centro de datos mediante servicios que facilitan la extensión de la infraestructura local a la nube. Esto incluye escenarios de escalabilidad, respaldo y recuperación ante desastres. AWS Outposts es ideal para aquellas empresas que necesitan ejecutar servicios de AWS en sus propias instalaciones.
+                    </li>
+                    <li>
+                        <p>Ampliación Geográfica y Cumplimiento:</p>
+                        Las aplicaciones se pueden implementar más cerca de los usuarios finales usando AWS Local Zones o AWS Wavelength, lo que permite reducir la latencia y cumplir con los requisitos locales de residencia de datos o normativas.
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion"><b>3. Computación Periférica</b></button>
+            <div class="panel">
+                <ul>    
+                    <li>
+                        <p>Procesamiento Local: </p>
+                        Con dispositivos como AWS Snowball y soluciones de computación periférica como AWS Wavelength, las empresas pueden procesar datos en el borde de la red antes de transferirlos a la nube, reduciendo la latencia y optimizando el rendimiento de las aplicaciones móviles y las redes 5G.
+                    </li>
+                    <li>
+                        <p>Admitir Aplicaciones de Baja Latencia:</p>
+                        AWS permite colocar infraestructura cerca de los usuarios para cumplir con los requisitos de baja latencia, como milisegundos en aplicaciones sensibles, utilizando AWS Local Zones o AWS Outposts.
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion"><b>4. Coherencia Operativa y Seguridad</b></button>
+            <div class="panel">
+                <ul>    
+                <li>
+                    <p>Servicios en las Instalaciones y la Nube: </p>
+                    La integración de aplicaciones entre los entornos on-premises y en la nube se facilita con herramientas de gestión unificada, como AWS Systems Manager, que garantizan la coherencia operativa. AWS Identity and Access Management (IAM) y AWS Key Management Service (KMS) permiten mantener la seguridad y el control en ambos entornos.
+                </li>
+                <li>
+                    <p>Residencia de Datos:</p>
+                    AWS ofrece opciones para cumplir con las normativas locales de almacenamiento de datos, como la residencia de datos en países específicos, utilizando los mismos servicios y herramientas que se aplican tanto en la nube como on-premises.
+                </li>
+                </ul>
+            </div>
+            <button class="accordion"><b>5. Arquitectura Híbrida de Datos</b></button>
+            <div class="panel">
+                <ul>    
+                <li>
+                    <p>Procesamiento de Datos Localmente: </p>
+                    Las arquitecturas híbridas permiten mantener ciertos datos en las instalaciones, debido a limitaciones de ancho de banda, costos o normativas, mientras que otros datos pueden ser transferidos y archivados en la nube de AWS. Soluciones como AWS Storage Gateway y AWS DataSync permiten un flujo de datos eficiente entre los entornos.
+                </li>
+                </ul>
+            </div>
+
+
+            <h4 id="Punto">Punto 2</h4>
+            Investigar y responder a:
+            <button class="accordion"><b>¿Qué es la cultura DevOps?</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p> Es un conjunto de practicas, texting, build, deployd de aplicaciones en pequeños pasos de forma frecuente, es decir el ciclo de vida de desarrollo del software </p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion"><b>¿Qué es CI/CD?</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p> CI/CD son prácticas de desarrollo de software que permiten una integración y entrega continua de código.Esto significa que los cambios en el código se integran y despliegan automáticamente en entornos de producción.</p>
+                        <h5>Beneficios de CI/CD</h5>
+                        <ul>
+                            <li>Reducción de errores en producción.</li>
+                            <li>Despliegues más rápidos y frecuentes.</li>
+                            <li>Mejor colaboración entre equipos de desarrollo.</li>
+                        </ul>
+                        <h5>Herramientas de CI/CD</h5>
+                        <p>Existen varias herramientas populares que facilitan CI/CD:</p>
+                        <ul>
+                            <li>Jenkins</li>
+                            <li>GitHub Actions</li>
+                            <li>Travis CI</li>
+                            <li>CircleCI</li>
+                            <li>GitLab CI</li>
+                        </ul>
+                    </li>        
+                </ul>
+            </div>
+            <button class="accordion"><b>¿Qué es Pipeline CI/CD?</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p> Un pipeline CI/CD es un proceso que automatiza la creación, prueba e implementación de código para el desarrollo de software. Se trata de una serie de pasos que se ejecutan en orden para distribuir una nueva versión de un sistema de software.</p> 
+                            El objetivo de un pipeline CI/CD es minimizar el error humano y mantener un proceso consistente para la publicación del software. 
+                        <p> Los pipelines CI/CD son una combinación de:
+                        <ul>    
+                            <li>Código</li>
+                            <li>Procesos, como crear y probar flujos de trabajo</li>
+                            <li> Herramientas</li> 
+                        </ul>    
+                        </p> 
+                    </li>        
+                </ul>
+            </div>
+            <button class="accordion"><b>¿Qué es Git y GitHub?</b></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <p>Git: </p>
+                            Git es un sistema de control de versiones distribuido que permite a múltiples personas trabajar en el mismo proyecto al mismo tiempo, realizando cambios y colaborando sin riesgo de perder información. Git rastrea todos los cambios en el código fuente a lo largo del tiempo, permitiendo a los desarrolladores retroceder a versiones anteriores si es necesario, y facilita la integración de cambios de diferentes colaboradores.
+                        <li>GitHub: </li>
+                        GitHub es una plataforma basada en la web que utiliza Git para alojar proyectos de software. Además de las funciones de Git, GitHub ofrece herramientas adicionales para la colaboración, como:
+                    <ul>   
+                        <li>remotos: Puedes almacenar tus proyectos de Git en la nube, permitiendo que otros los accedan y contribuyan.</li> 
+                        <li>Colaboración: GitHub facilita la colaboración a través de "pull requests", revisiones de código y "issues" (problemas) para el seguimiento de tareas o errores.</li>
+                        <li>Integraciones: GitHub se integra con diversas herramientas de desarrollo continuo y despliegue automatizado.</li>
+                        <li>Proyectos públicos o privados: Puedes hacer que tus repositorios sean accesibles al público o mantenerlos privados.</li>
+                    </ul>     
+                    </li>        
+                </ul>
+            </div>
+            <button class="accordion"><b>¿Qué son GitHub Actions?</b></button>
+            <div class="panel">
+                    <p>
+                        GitHub Actions es una herramienta de CI/CD integrada en GitHub que permite automatizar flujos de trabajo directamente en el repositorio. 
+                        Permite a los desarrolladores crear acciones que se ejecutan en respuesta a eventos, como pushes o pull requests.
+                    </p>
+                    <p>
+                        Al implementar GitHub Actions, los equipos pueden:
+                    </p>
+                    <ul>
+                        <li>Automatizar pruebas y validaciones de código.</li>
+                        <li>Desplegar aplicaciones automáticamente en entornos de producción.</li>
+                        <li>Personalizar flujos de trabajo mediante el uso de YAML para definir acciones y secuencias de comandos.</li>
+                    </ul>
+                <p>
+                    Esto mejora la eficiencia y reduce el riesgo de errores, ya que las acciones se pueden configurar para ejecutarse automáticamente cada vez que se produce un cambio en el código.
+                </p>
+                <p>Conceptos clave en GitHub Actions:</p>
+                <p><b>1. Workflows (Flujos de trabajo):</b> Los eventos son lo que inicia un workflow. Un evento puede ser cualquier acción que suceda en tu repositorio. Algunos ejemplos incluyen:</p>
+                    <ul>
+                        <li>Los workflows se definen en un archivo YAML en la carpeta .github/workflows/.</li>
+                    </ul>
+                <p><b>2. Eventos (Triggers):</b>Un job es una unidad de trabajo que se ejecuta en un entorno de ejecución (por ejemplo, una máquina virtual o un contenedor). Un workflow puede tener uno o varios jobs, y estos pueden ejecutarse en paralelo o secuencialmente.</p>
+                    <ul>
+                        <li><b>push:</b>Cuando se suben cambios a una rama.</li>
+                        <li><b>pull_request:</b>Los workflows se definen en un archivo YAML en la carpeta .github/workflows/.</li>
+                        <li><b>schedule:</b>Para ejecutar un workflow en horarios específicos.</li>
+                        <li><b>workflow_dispatch:</b>Permite disparar el workflow manualmente.</li>
+                        <p>Los eventos son esenciales para definir cuándo deben ejecutarse los flujos de trabajo.</p>
+                    </ul>
+                <p><b>3. Jobs (Tareas):</b> Un job es una unidad de trabajo que se ejecuta en un entorno de ejecución (por ejemplo, una máquina virtual o un contenedor). Un workflow puede tener uno o varios jobs, y estos pueden ejecutarse en paralelo o secuencialmente.</p>
+                    <ul>
+                        <li>Cada job tiene su propio entorno y puede depender del resultado de otro.</li>
+                        <li>Un job puede contener múltiples steps (pasos) que se ejecutan secuencialmente dentro de ese job.</li>
+                    </ul>
+                <p><b>4. Steps (Pasos):</b> Los steps son las acciones individuales que se ejecutan dentro de un job. Un step puede ser una acción predefinida o un script personalizado. Los steps dentro de un job se ejecutan en orden secuencial.</p>
+                    <ul>
+                        <li>Por ejemplo, un step podría ser instalar dependencias, otro podría ser ejecutar pruebas, y otro podría desplegar la aplicación.</li>
+                        <li>Los steps pueden ejecutar comandos de shell o utilizar acciones reutilizables de GitHub (llamadas Actions).</li>
+                    </ul>
+                <p><b>5. Actions (Acciones): </b> Las actions son unidades reutilizables de código que pueden realizar tareas específicas dentro de un step. GitHub ofrece muchas acciones preconstruidas, como por ejemplo una para configurar el entorno de Node.js o para hacer despliegues automáticos.</p>
+                           
+            </div>
+        </section>
+        
+      
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CI/CD Website. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
